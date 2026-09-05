@@ -23,7 +23,7 @@ provider "aws" {
 }
 # it will create s3 bucket in aws 
 resource "aws_s3_bucket" "idream-bk" {
-bucket = "idreamit-bucket-1234567"
+bucket = "idreamit-bucket-1234567-bk-terraform"
  tags = {
   Name = "Qa-bucket-idream"
   Environment = "Qa"
@@ -31,7 +31,7 @@ bucket = "idreamit-bucket-1234567"
 }
 # it will create linux-os  in aws 
 resource "aws_instance" "mylinuxos"{
- ami = "ami-name"
+ ami = "ami-094210f044117049d"
  instance_type = "t2.micro"
  tags = {
     Name = "Qa_mylinuxos"
