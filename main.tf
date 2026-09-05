@@ -32,7 +32,7 @@ bucket = "idreamit-bucket-1234567-bk-terraform"
 # it will create linux-os  in aws 
 resource "aws_instance" "mylinuxos"{
  ami = "ami-094210f044117049d"
- instance_type = "t2.micro"
+ instance_type = "t3.micro"
  tags = {
     Name = "Qa_mylinuxos"
 	Environment = "var.environment"
